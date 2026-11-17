@@ -1,124 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamna Waris - Profile & Contact</title>
   </head>
   <body>
-    <div>
+    <header>
       <h1>Hamna Waris</h1>
-      <p>I love building things for the web and learning new technologies every day.  I am here at <mark>Bloom Rix </mark>to gain some practical experience. </p>
+      <p>I love building things for the web and learning new technologies every day. I am here at <mark>Bloom Rix</mark> to gain some practical experience.</p>
       <small>Starting Date: 11-Nov-2026</small>
       <hr>
-    </div>
+    </header>
 
-    <div>
-      <h2>About Me</h2>
-      <img src= " hamna.jpeg " alt="Profile picture of hamna" width="150">
-      
-      <p>Hello! I am Hamna. I have completed my  <strong>Bachelor's degree in Computer Scienece</strong> from  <em>Virtual University of Pakistan.</em></p>
-    </div>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <img src="Hamna.jpeg" alt="Profile picture of Hamna" width="150">
+        <p>Hello! I am Hamna. I have completed my <strong>Bachelor's degree in Computer Science</strong> from <em>Virtual University of Pakistan.</em></p>
+      </section>
 
-    <div>
-      <h3>Skills I Have</h3>
-      <ul>
-        <li>HTML5 </li>
-        <li> CSS </li>
-        <li>Problem Solving</li>
-        <li>Bootstrap</li>
-        <li>PHP</li>
-        <li>SQL</li>
-      </ul>
-    </div>
+      <section>
+        <h3>Skills I Have</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Problem Solving</li>
+          <li>Bootstrap</li>
+          <li>PHP</li>
+          <li>SQL</li>
+        </ul>
+      </section>
 
-    <div>
-      <h3>Education</h3>
-      <ol>
-        <li>Matric</li>
-        <li>Intermidiate</li>
-        <li>Bachelor of Computer Science </li>
-      </ol>
-    </div>
+      <section>
+        <h3>Education</h3>
+        <ol>
+          <li>Matric</li>
+          <li>Intermediate</li>
+          <li>Bachelor of Computer Science</li>
+        </ol>
+      </section>
 
-    <div>
-      <h3>Connect with Me</h3>
-      <p>Check out my <a href="https://github.com" target="_parent">GitHub Profile</a> or visit <a href="https://example.com" target="_blank">My Portfolio</a>.</p>
-    </div>
+      <section>
+        <h3>Connect with Me</h3>
+        <p>Check out my <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a> or visit <a href="https://example.com" target="_blank" rel="noopener noreferrer">My Portfolio</a>.</p>
+      </section>
 
-    <hr>
+      <hr>
 
-    <div>
-      <h2>Contact & Registration Form</h2>
-      <form >
-        
-        <div>
-          <label for="fullname">Full Name:</label><br>
-          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
-        </div>
+      <section>
+        <h2>Contact & Registration Form</h2>
+        <form action="#" method="post">
+          
+          <div>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" autocomplete="name" required>
+          </div>
+          <br>
 
-        <br>
+          <div>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+          </div>
+          <br>
 
-        <div>
-          <label for="email">Email Address:</label><br>
-          <input type="email" id="email" name="email" placeholder="name@example.com" required>
-        </div>
+          <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password" required>
+          </div>
+          <br>
 
-        <br>
+          <div>
+            <label for="birthdate">Date of Birth:</label><br>
+            <input type="date" id="birthdate" name="birthdate" required>
+          </div>
+          <br>
 
-        <div>
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="password" placeholder="Create a password" required>
-        </div>
+          <div>
+            <label for="experience">Years of Experience:</label><br>
+            <input type="number" id="experience" name="experience" min="0" max="50" step="1" value="1">
+          </div>
+          <br>
 
-        <br>
+          <div>
+            <fieldset>
+              <legend>Gender:</legend>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+            </fieldset>
+          </div>
+          <br>
 
-        <div>
-          <label for="birthdate">Date of Birth:</label><br>
-          <input type="date" id="birthdate" name="birthdate" required>
-        </div>
+          <div>
+            <fieldset>
+              <legend>Interests:</legend>
+              <input type="checkbox" id="coding" name="interests" value="coding" checked>
+              <label for="coding">Coding</label>
+              <input type="checkbox" id="reading" name="interests" value="reading">
+              <label for="reading">Reading</label>
+            </fieldset>
+          </div>
+          <br>
 
-        <br>
+          <div>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your short message here"></textarea>
+          </div>
+          <br>
 
-        <div>
-          <label for="experience">Years of Experience:</label><br>
-          <input type="number" id="experience" name="experience" min="0" max="50" step="1" value="1">
-        </div>
+          <div>
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+          </div>
 
-        <br>
-
-        <div>
-          <span>Gender:</span><br>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label>
-        </div>
-
-        <br>
-
-        <div>
-          <span>Interests:</span><br>
-          <input type="checkbox" id="coding" name="interests" value="coding" checked>
-          <label for="coding">Coding</label>
-          <input type="checkbox" id="reading" name="interests" value="reading">
-          <label for="reading">Reading</label>
-        </div>
-
-        <br>
-
-        <div>
-          <label for="message">Message:</label><br>
-          <input type="text" id="message" name="message" placeholder="Write your short message here">
-        </div>
-
-        <br>
-
-        <div>
-          <button type="submit">Submit Form</button>
-          <button type="reset">Reset Form</button>
-        </div>
-
-      </form>
-    </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
